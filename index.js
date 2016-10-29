@@ -11,6 +11,28 @@ var editors = names.map(n => {
     return editor;
 });
 
+editors[0].setValue(`
+Page({
+    data: {
+        msg: 'Hello World'
+    }
+})
+`);
+
+editors[1].setValue(`
+<page>
+    <view class="hello">
+        {{msg}}
+    </view>
+</page>
+`);
+
+editors[2].setValue(`
+.hello {
+    color: red;
+}
+`)
+
 function handleReload() {
     var javascript = editors[0].getValue();
     var html = editors[1].getValue();
