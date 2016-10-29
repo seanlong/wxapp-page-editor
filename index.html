@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>微信小程序在线编辑器</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css"></style>
+</head>
+<body>
+    <div id="javascript"></div>
+    <div id="html"></div>
+    <div id="css"></div>
+    <span class="editorType">JAVASCRIPT</span>
+    <span class="editorType" style="top: calc(30% + 15px);">HTML</span>
+    <span class="editorType" style="top: calc(60% + 30px);">CSS</span>
+    <a class="reload" href="#" onclick="handleReload()">
+        <i class="fa fa-refresh" aria-hidden="true"></i>刷新
+    </a> 
+    <iframe></iframe>
+    <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
